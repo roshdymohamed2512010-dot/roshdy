@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Meta Information -->
+  <title>Roshdy Mohamed | Aspiring Software Developer & C++ Programmer</title>
+  <meta name="description" content="Portfolio of Roshdy Mohamed — Aspiring Software Developer, C++ Programmer, and Tech Enthusiast. Explore featured projects including Roshdy Bank, skills, and coding journey.">
+  <meta name="keywords" content="Roshdy Mohamed, Software Developer, C++ Programmer, Portfolio, Roshdy Bank, OOP, Web Development">
+  <meta name="author" content="Roshdy Mohamed">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Roshdy Mohamed | Personal Portfolio">
+  <meta property="og:description" content="Aspiring Software Developer | C++ Programmer | Tech Enthusiast">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon (SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230a0d18'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='52' font-weight='900' fill='%2338bdf8'>R</text></svg>">
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Lighting -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-middle" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- Interactive Grid Background Pattern -->
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Roshdy Mohamed Home">
+        <span class="logo-box">
+          <span class="logo-letter">R</span>
+        </span>
+        <span class="brand-name">Roshdy<span class="accent-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-nav">Get In Touch</a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-links">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#journey" class="mobile-link">Journey</a></li>
+        <li><a href="#philosophy" class="mobile-link">Philosophy</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="#contact" class="btn btn-primary w-full">Let's Connect</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <!-- Background Dynamic Canvas -->
+      <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-content">
+        <div class="hero-badge reveal">
+          <span class="status-indicator"></span>
+          <span class="badge-text">Available for Opportunities & Collaboration</span>
+        </div>
+
+        <h1 class="hero-title reveal">
+          Hi, I'm <span class="gradient-text">Roshdy Mohamed</span>.
+        </h1>
+
+        <p class="hero-subtitle reveal">
+          Aspiring Software Developer <span class="separator">|</span> C++ Programmer <span class="separator">|</span> Tech Enthusiast
+        </p>
+
+        <p class="hero-description reveal">
+          I believe programming is more than writing code. It's about understanding problems, building solutions, and turning ideas into reality.
+        </p>
+
+        <div class="hero-cta-group reveal">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore My Work</span>
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <!-- Terminal Quick Peek Badge -->
+        <div class="hero-terminal-pill reveal" id="terminalPillTrigger">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <code class="terminal-code">g++ -std=c++17 roshdy_bank.cpp -o app &amp;&amp; ./app</code>
+          <span class="terminal-tag">Explore Core Project</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Introduction</span>
+          <h2 class="section-title">Who Am I?</h2>
+          <div class="section-title-bar"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Card -->
+          <div class="about-card glass-panel spotlight-card reveal">
+            <div class="card-inner">
+              <div class="about-avatar-wrapper">
+                <div class="avatar-glow"></div>
+                <div class="avatar-box">
+                  <span class="avatar-initials">RM</span>
+                </div>
+                <div class="avatar-badge">
+                  <span>Student &amp; Builder</span>
+                </div>
+              </div>
+
+              <div class="about-text-content">
+                <p class="about-paragraph lead">
+                  I'm Roshdy Mohamed, a passionate programming student interested in software development and technology.
+                </p>
+                <p class="about-paragraph">
+                  My journey started with learning programming fundamentals and exploring how software works behind the scenes.
+                </p>
+                <p class="about-paragraph">
+                  I have been developing my skills in C++, Object-Oriented Programming, and web development through practical projects.
+                </p>
+                <p class="about-paragraph">
+                  I believe in learning by doing, solving problems, and continuously improving my skills.
+                </p>
+                <p class="about-paragraph highlight-quote">
+                  My goal is to become a skilled software developer and build meaningful applications that make a difference.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Code Card (Simulated Environment) -->
+          <div class="about-visual glass-panel reveal">
+            <div class="code-window">
+              <div class="code-window-header">
+                <div class="window-buttons">
+                  <span class="btn-circle red"></span>
+                  <span class="btn-circle yellow"></span>
+                  <span class="btn-circle green"></span>
+                </div>
+                <span class="window-title">developer_profile.hpp</span>
+                <span class="code-lang-badge">C++</span>
+              </div>
+              <div class="code-window-body">
+                <pre class="code-block"><code><span class="code-comment">// Developer Profile &amp; Mindset</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;iostream&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;string&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;vector&gt;</span>
+
+<span class="code-keyword">struct</span> <span class="code-type">Developer</span> {
+    <span class="code-type">std::string</span> name = <span class="code-string">"Roshdy Mohamed"</span>;
+    <span class="code-type">std::string</span> role = <span class="code-string">"Aspiring Software Developer"</span>;
+    <span class="code-type">std::vector&lt;std::string&gt;</span> core = {
+        <span class="code-string">"C++"</span>, <span class="code-string">"OOP"</span>, <span class="code-string">"File Handling"</span>, <span class="code-string">"Web"</span>
+    };
+    
+    <span class="code-type">bool</span> lovesProblemSolving = <span class="code-keyword">true</span>;
+    <span class="code-type">bool</span> continuousLearning = <span class="code-keyword">true</span>;
+    
+    <span class="code-type">void</span> <span class="code-func">printMission</span>() {
+        <span class="code-type">std::cout</span> &lt;&lt; <span class="code-string">"Building solutions that make a difference."</span> 
+                  &lt;&lt; <span class="code-type">std::endl</span>;
+    }
+};</code></pre>
+              </div>
+              <div class="code-window-footer">
+                <span class="status-pill"><span class="pulse-dot"></span> Compilation: Successful (0 warnings)</span>
+                <span class="specs-pill">C++17 Standard</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Core technologies and engineering concepts developed through hands-on practice.
+          </p>
+          <div class="section-title-bar"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: C++ -->
+          <div class="skill-card glass-panel spotlight-card reveal">
+            <div class="skill-icon-wrapper cpp">
+              <svg viewBox="0 0 48 48" class="skill-icon" fill="currentColor">
+                <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-2.2 27.2c-4 0-7.2-3.2-7.2-7.2s3.2-7.2 7.2-7.2c2.2 0 4.1.9 5.3 2.5l-2.6 1.8c-.7-.9-1.6-1.4-2.7-1.4-2.4 0-4.3 1.9-4.3 4.3s1.9 4.3 4.3 4.3c1.1 0 2-.5 2.7-1.4l2.6 1.8c-1.2 1.6-3.1 2.6-5.3 2.6zm10.2-5.7v2.5h-2.5V28h2.5v2.5h2.5V28h2.5v-2.5h-2.5v-2.5H32zm7 0v2.5h-2.5V28h2.5v2.5h2.5V28h2.5v-2.5h-2.5v-2.5H39z"/>
+              </svg>
+            </div>
+            <div class="skill-content">
+              <h3 class="skill-name">C++</h3>
+              <p class="skill-category">Systems &amp; Core Language</p>
+              <p class="skill-desc">Syntax mastery, memory awareness, data types, control flow, functions, and standard libraries.</p>
+            </div>
+            <div class="skill-tag">Core Focus</div>
+          </div>
+
+          <!-- Skill 2: Object-Oriented Programming -->
+          <div class="skill-card glass-panel spotlight-card reveal">
+            <div class="skill-icon-wrapper oop">
+              <svg viewBox="0 0 24 24" class="skill-icon" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="8" height="8" rx="2"></rect>
+                <rect x="14" y="3" width="8" height="8" rx="2"></rect>
+                <rect x="8" y="13" width="8" height="8" rx="2"></rect>
+                <path d="M6 11v4h2m10-4v4h-2"></path>
+              </svg>
+            </div>
+            <div class="skill-content">
+              <h3 class="skill-name">Object-Oriented Programming</h3>
+              <p class="skill-category">Architecture Paradigm</p>
+              <p class="skill-desc">Encapsulation, inheritance, polymorphism, abstraction, and clean class modeling.</p>
+            </div>
+            <div class="skill-tag">Paradigm</div>
+          </div>
+
+          <!-- Skill 3: HTML -->
+          <div class="skill-card glass-panel spotlight-card reveal">
+            <div class="skill-icon-wrapper html">
+              <svg viewBox="0 0 24 24" class="skill-icon" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="skill-content">
+              <h3 class="skill-name">HTML</h3>
+              <p class="skill-category">Web Foundations</p>
+              <p class="skill-desc">Semantic document markup, accessibility fundamentals, clean structure, and modern web layouts.</p>
+            </div>
+            <div class="skill-tag">Frontend</div>
+          </div>
+
+          <!-- Skill 4: CSS -->
+          <div class="skill-card glass-panel spotlight-card reveal">
+            <div class="skill-icon-wrapper css">
+              <svg viewBox="0 0 24 24" class="skill-icon" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <div class="skill-content">
+              <h3 class="skill-name">CSS</h3>
+              <p class="skill-category">Styling &amp; Layouts</p>
+              <p class="skill-desc">Flexbox, Grid systems, responsive styling, glassmorphism aesthetics, and smooth transitions.</p>
+            </div>
+            <div class="skill-tag">Design</div>
+          </div>
+
+          <!-- Skill 5: File Handling -->
+          <div class="skill-card glass-panel spotlight-card reveal">
+            <div class="skill-icon-wrapper file">
+              <svg viewBox="0 0 24 24" class="skill-icon" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                <polyline points="13 2 13 9 20 9"></polyline>
+                <line x1="9" y1="13" x2="15" y2="13"></line>
+                <line x1="9" y1="17" x2="15" y2="17"></line>
+              </svg>
+            </div>
+            <div class="skill-content">
+              <h3 class="skill-name">File Handling</h3>
+              <p class="skill-category">Data Persistence</p>
+              <p class="skill-desc">File streams (`fstream`, `ifstream`, `ofstream`), structured data serialization, and file I/O operations.</p>
+            </div>
+            <div class="skill-tag">Systems</div>
+          </div>
+
+          <!-- Skill 6: Problem Solving -->
+          <div class="skill-card glass-panel spotlight-card reveal">
+            <div class="skill-icon-wrapper logic">
+              <svg viewBox="0 0 24 24" class="skill-icon" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <div class="skill-content">
+              <h3 class="skill-name">Problem Solving</h3>
+              <p class="skill-category">Analytical Thinking</p>
+              <p class="skill-desc">Deconstructing complex challenges, algorithmic reasoning, debugging, and iterative optimization.</p>
+            </div>
+            <div class="skill-tag">Mindset</div>
+          </div>
+
+          <!-- Skill 7: MIT App Inventor -->
+          <div class="skill-card glass-panel spotlight-card reveal">
+            <div class="skill-icon-wrapper app">
+              <svg viewBox="0 0 24 24" class="skill-icon" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="skill-content">
+              <h3 class="skill-name">MIT App Inventor</h3>
+              <p class="skill-category">App Development</p>
+              <p class="skill-desc">Visual logic programming, mobile UI design, interactive user events, and mobile application prototyping.</p>
+            </div>
+            <div class="skill-tag">Mobile</div>
+          </div>
+
+          <!-- Skill 8: Software Development Fundamentals -->
+          <div class="skill-card glass-panel spotlight-card reveal">
+            <div class="skill-icon-wrapper fundamentals">
+              <svg viewBox="0 0 24 24" class="skill-icon" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <div class="skill-content">
+              <h3 class="skill-name">Software Development Fundamentals</h3>
+              <p class="skill-category">Core Engineering</p>
+              <p class="skill-desc">Software lifecycle, clean coding habits, modular structuring, documentation, and logic debugging.</p>
+            </div>
+            <div class="skill-tag">Foundation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications and exploratory projects showcasing my engineering progress.</p>
+          <div class="section-title-bar"></div>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- PROJECT 01: ROSHDY BANK (Flagship Project) -->
+          <article class="project-card flagship-project glass-panel spotlight-card reveal">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="project-number">Project 01</span>
+                <span class="project-category-badge">C++ | Banking Management System</span>
+              </div>
+              <div class="project-status">
+                <span class="status-badge flagship">Flagship Project</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-details">
+                <h3 class="project-title">ROSHDY BANK</h3>
+                <p class="project-description">
+                  A console-based banking management system developed using C++. The project demonstrates object-oriented programming, account management, file handling, and transaction processing.
+                </p>
+
+                <div class="project-features-block">
+                  <h4 class="features-title">Core Implemented Features:</h4>
+                  <ul class="features-grid">
+                    <li class="feature-item">
+                      <span class="feature-check">&#10003;</span>
+                      <span>Account Creation</span>
+                    </li>
+                    <li class="feature-item">
+                      <span class="feature-check">&#10003;</span>
+                      <span>User Login</span>
+                    </li>
+                    <li class="feature-item">
+                      <span class="feature-check">&#10003;</span>
+                      <span>Deposits and Withdrawals</span>
+                    </li>
+                    <li class="feature-item">
+                      <span class="feature-check">&#10003;</span>
+                      <span>Money Transfers</span>
+                    </li>
+                    <li class="feature-item">
+                      <span class="feature-check">&#10003;</span>
+                      <span>Account Search</span>
+                    </li>
+                    <li class="feature-item">
+                      <span class="feature-check">&#10003;</span>
+                      <span>Transaction History</span>
+                    </li>
+                    <li class="feature-item">
+                      <span class="feature-check">&#10003;</span>
+                      <span>Data Persistence</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project-tags">
+                  <span class="tech-pill">C++</span>
+                  <span class="tech-pill">OOP Architecture</span>
+                  <span class="tech-pill">File I/O (`fstream`)</span>
+                  <span class="tech-pill">Data Structures</span>
+                  <span class="tech-pill">Console CLI</span>
+                </div>
+
+                <div class="project-actions">
+                  <button class="btn btn-primary btn-sm" id="openTerminalModalBtn">
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                      <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Run Interactive CLI Simulation</span>
+                  </button>
+                  <button class="btn btn-secondary btn-sm" id="viewArchitectureBtn">
+                    <span>Inspect System Code</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Interactive Live Preview Simulation in the Card -->
+              <div class="project-preview">
+                <div class="terminal-shell">
+                  <div class="terminal-header">
+                    <div class="terminal-controls">
+                      <span class="dot close"></span>
+                      <span class="dot minimize"></span>
+                      <span class="dot maximize"></span>
+                    </div>
+                    <span class="terminal-title">roshdy_bank_session — 80x24</span>
+                  </div>
+                  <div class="terminal-screen" id="inlineTerminalScreen">
+                    <p class="term-line output"><span class="term-cyan">=== ROSHDY BANK MANAGEMENT SYSTEM ===</span></p>
+                    <p class="term-line output">C++ Core Engine Loaded. File storage connected.</p>
+                    <p class="term-line output term-dim">[1] Create Account   [2] Login</p>
+                    <p class="term-line output term-dim">[3] Deposit Funds    [4] Withdraw</p>
+                    <p class="term-line output term-dim">[5] Money Transfer   [6] Account Search</p>
+                    <p class="term-line output term-dim">[7] View History     [8] Exit</p>
+                    <p class="term-line prompt"><span class="term-green">guest@roshdy-bank:~$</span> <span class="term-typing">./execute_search --acc 1042</span></p>
+                    <p class="term-line success">✓ Account Found: Active | Balance Verified</p>
+                    <p class="term-line prompt"><span class="term-green">guest@roshdy-bank:~$</span> <span class="term-cursor">_</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- GRID FOR PROJECTS 02 & 03 -->
+          <div class="projects-subgrid">
+            <!-- PROJECT 02: PERSONAL WEB PROJECTS -->
+            <article class="project-card glass-panel spotlight-card reveal">
+              <div class="project-header">
+                <div class="project-meta">
+                  <span class="project-number">Project 02</span>
+                  <span class="project-category-badge">HTML | CSS | Web Development</span>
+                </div>
+              </div>
+
+              <div class="project-body-compact">
+                <h3 class="project-title">PERSONAL WEB PROJECTS</h3>
+                <p class="project-description">
+                  Personal website projects focused on building modern, responsive, and visually appealing web experiences.
+                </p>
+
+                <div class="project-mini-showcase">
+                  <div class="browser-frame">
+                    <div class="browser-bar">
+                      <div class="browser-dots">
+                        <span></span><span></span><span></span>
+                      </div>
+                      <div class="browser-url">roshdy.dev/responsive-ui</div>
+                    </div>
+                    <div class="browser-canvas">
+                      <div class="mock-hero">
+                        <div class="mock-line title"></div>
+                        <div class="mock-line subtitle"></div>
+                        <div class="mock-buttons">
+                          <div class="mock-btn"></div>
+                          <div class="mock-btn secondary"></div>
+                        </div>
+                      </div>
+                      <div class="mock-cards">
+                        <div class="mock-card"></div>
+                        <div class="mock-card"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-tags">
+                  <span class="tech-pill">HTML5</span>
+                  <span class="tech-pill">Modern CSS3</span>
+                  <span class="tech-pill">Responsive Design</span>
+                  <span class="tech-pill">Glassmorphism</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 03: MIT APP INVENTOR -->
+            <article class="project-card glass-panel spotlight-card reveal">
+              <div class="project-header">
+                <div class="project-meta">
+                  <span class="project-number">Project 03</span>
+                  <span class="project-category-badge">App Development</span>
+                </div>
+              </div>
+
+              <div class="project-body-compact">
+                <h3 class="project-title">MIT APP INVENTOR</h3>
+                <p class="project-description">
+                  Interactive application and game development experiments using MIT App Inventor, combining visual design with programming logic.
+                </p>
+
+                <div class="project-mini-showcase">
+                  <div class="mobile-mockup-frame">
+                    <div class="mobile-speaker"></div>
+                    <div class="mobile-screen">
+                      <div class="mobile-app-header">
+                        <div class="mobile-app-title">Logic Block Experiment</div>
+                      </div>
+                      <div class="mobile-blocks-demo">
+                        <div class="logic-block block-orange">when Button.Click do</div>
+                        <div class="logic-block block-green nested">set Label.Text to "Action Completed"</div>
+                        <div class="logic-block block-purple nested">call Sound.Play</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-tags">
+                  <span class="tech-pill">MIT App Inventor</span>
+                  <span class="tech-pill">Event-Driven Logic</span>
+                  <span class="tech-pill">Visual Programming</span>
+                  <span class="tech-pill">Mobile UI</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MY JOURNEY SECTION -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Milestones</span>
+          <h2 class="section-title">My Journey</h2>
+          <p class="section-subtitle">The progression of my technical exploration and hands-on growth.</p>
+          <div class="section-title-bar"></div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-track" aria-hidden="true">
+            <div class="timeline-progress-bar" id="timelineProgress"></div>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <span class="marker-number">1</span>
+            </div>
+            <div class="timeline-card glass-panel spotlight-card">
+              <span class="timeline-badge">Foundation</span>
+              <h3 class="timeline-heading">Started learning programming fundamentals.</h3>
+              <p class="timeline-text">Explored computational logic, algorithm thinking, variable storage, conditions, and how computers process instructions.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <span class="marker-number">2</span>
+            </div>
+            <div class="timeline-card glass-panel spotlight-card">
+              <span class="timeline-badge">Systems</span>
+              <h3 class="timeline-heading">Learned C++ basics.</h3>
+              <p class="timeline-text">Mastered standard syntax, data types, functions, control structures, and console input/output mechanisms.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <span class="marker-number">3</span>
+            </div>
+            <div class="timeline-card glass-panel spotlight-card">
+              <span class="timeline-badge">Architecture</span>
+              <h3 class="timeline-heading">Explored Object-Oriented Programming.</h3>
+              <p class="timeline-text">Dove deep into classes, objects, encapsulation, methods, and structuring modular code to solve real-world problems.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-item reveal highlight-step">
+            <div class="timeline-marker">
+              <span class="marker-number">4</span>
+            </div>
+            <div class="timeline-card glass-panel spotlight-card">
+              <span class="timeline-badge primary">Key Milestone</span>
+              <h3 class="timeline-heading">Developed ROSHDY BANK.</h3>
+              <p class="timeline-text">Engineered a complete console-based banking management system in C++ integrating account models, authentication, transactions, and persistent file handling.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <span class="marker-number">5</span>
+            </div>
+            <div class="timeline-card glass-panel spotlight-card">
+              <span class="timeline-badge">Web Tech</span>
+              <h3 class="timeline-heading">Explored HTML and CSS.</h3>
+              <p class="timeline-text">Expanded into web development by creating structured semantic markup and designing clean, responsive user interfaces.</p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <span class="marker-number">6</span>
+            </div>
+            <div class="timeline-card glass-panel spotlight-card">
+              <span class="timeline-badge">Mobile Exploration</span>
+              <h3 class="timeline-heading">Experimented with MIT App Inventor.</h3>
+              <p class="timeline-text">Created interactive mobile application prototypes and games, combining visual logic blocks with event-driven user actions.</p>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker active-marker">
+              <span class="marker-number">7</span>
+            </div>
+            <div class="timeline-card glass-panel spotlight-card">
+              <span class="timeline-badge continuous">Ongoing</span>
+              <h3 class="timeline-heading">Continuously improving my programming skills.</h3>
+              <p class="timeline-text">Sharpening problem-solving capabilities, exploring advanced concepts, and building software solutions with dedication every single day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY PHILOSOPHY SECTION -->
+    <section class="section philosophy-section" id="philosophy">
+      <div class="container">
+        <div class="philosophy-wrapper glass-panel reveal">
+          <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+          <div class="philosophy-content">
+            <span class="philosophy-tag">Guiding Principle</span>
+            <blockquote class="philosophy-quote">
+              &ldquo;Great developers are not those who know everything, but those who never stop learning.&rdquo;
+            </blockquote>
+            <div class="philosophy-author">
+              <span class="author-line"></span>
+              <span class="author-name">Roshdy Mohamed</span>
+              <span class="author-title">Aspiring Software Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Build Something Together.</h2>
+          <p class="section-subtitle">
+            Have an idea, a project, or an opportunity? I'd love to hear from you.
+          </p>
+          <div class="section-title-bar"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels List -->
+          <div class="contact-channels glass-panel reveal">
+            <h3 class="channels-title">Connect Directly</h3>
+            <p class="channels-desc">Feel free to reach out across any of the platforms below. I am always open to discussing new ideas and learning opportunities.</p>
+
+            <div class="channels-list">
+              <!-- Email Item (Editable link) -->
+              <div class="channel-card">
+                <div class="channel-icon-box email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Email</span>
+                  <!-- EDITABLE LINK -->
+                  <a href="mailto:roshdymohamed2512010@gmail.com" class="channel-value" id="emailLink" title="Click to send email">
+                    roshdymohamed2512010@gmail.com
+                  </a>
+                </div>
+                <button class="channel-copy-btn" id="copyEmailBtn" aria-label="Copy email address" title="Copy email address">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- GitHub Item (Editable link) -->
+              <div class="channel-card">
+                <div class="channel-icon-box github">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">GitHub</span>
+                  <!-- EDITABLE LINK -->
+                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="channel-value" id="githubLink">
+                    github.com/yourusername
+                  </a>
+                </div>
+                <span class="channel-arrow">&rarr;</span>
+              </div>
+
+              <!-- LinkedIn Item (Editable link) -->
+              <div class="channel-card">
+                <div class="channel-icon-box linkedin">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">LinkedIn</span>
+                  <!-- EDITABLE LINK -->
+                  <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="channel-value" id="linkedinLink">
+                    linkedin.com/in/yourprofile
+                  </a>
+                </div>
+                <span class="channel-arrow">&rarr;</span>
+              </div>
+
+              <!-- Instagram Item (Editable link) -->
+              <div class="channel-card">
+                <div class="channel-icon-box instagram">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Instagram</span>
+                  <!-- EDITABLE LINK -->
+                  <a href="https://instagram.com/its_roshdy_x1" target="_blank" rel="noopener noreferrer" class="channel-value" id="instagramLink">
+                    https://www.instagram.com/its_roshdy_x1/
+                
+                  </a>
+                </div>
+                <span class="channel-arrow">&rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-wrapper glass-panel reveal">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-desc">I will receive your message and respond as quickly as possible.</p>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name</label>
+                <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Alex Hunter" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Your Email</label>
+                <input type="email" id="senderEmail" name="email" class="form-input" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Message</label>
+                <textarea id="senderMessage" name="message" rows="4" class="form-textarea" placeholder="Tell me about your idea, project, or question..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full" id="sendBtn">
+                <span>Send Message</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                  <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-box small">R</span>
+          <span class="brand-name">Roshdy Mohamed</span>
+        </a>
+        <p class="footer-tagline">Designed &amp; Developed by Roshdy Mohamed.</p>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">&copy; 2026 Roshdy Mohamed. All Rights Reserved.</p>
+        <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE MODAL: ROSHDY BANK CLI SIMULATOR -->
+  <div class="modal-backdrop" id="terminalModal" aria-hidden="true">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="modal-title-text">ROSHDY BANK — Interactive C++ Simulation</span>
+        </div>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-terminal-console">
+          <div class="modal-terminal-output" id="modalTermOutput">
+            <p class="term-line success">ROSHDY BANK v1.2 [Compiled with g++ C++17 on Windows/Linux]</p>
+            <p class="term-line info">Demonstrating OOP, File Handling (fstream), and Transaction Processing.</p>
+            <p class="term-line output">-------------------------------------------------------------</p>
+            <p class="term-line output">Commands: <span class="term-cyan">create</span>, <span class="term-cyan">deposit</span>, <span class="term-cyan">withdraw</span>, <span class="term-cyan">transfer</span>, <span class="term-cyan">balance</span>, <span class="term-cyan">history</span>, <span class="term-cyan">clear</span>, <span class="term-cyan">help</span></p>
+          </div>
+          <form class="modal-terminal-input-bar" id="modalTermForm">
+            <span class="term-prompt-symbol">roshdy_bank&gt;</span>
+            <input type="text" id="modalTermInput" class="term-input" placeholder="Type a command (e.g. deposit 250, balance, help)..." autocomplete="off" spellcheck="false">
+          </form>
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <span class="modal-hint">Quick test: try <code>deposit 500</code> or <code>transfer 200</code> or <code>balance</code></span>
+        <button class="btn btn-secondary btn-sm" id="closeModalBottomBtn">Close Terminal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE MODAL: C++ ARCHITECTURE INSPECTOR -->
+  <div class="modal-backdrop" id="architectureModal" aria-hidden="true">
+    <div class="modal-dialog glass-panel max-w-4xl">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="modal-title-text">ROSHDY BANK — C++ Architecture &amp; OOP Design</span>
+        </div>
+        <button class="modal-close-btn" id="closeArchModalBtn" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="code-window-body">
+          <pre class="code-block arch-code"><code><span class="code-comment">/**
+ * ROSHDY BANK - Banking Management System
+ * Developed by Roshdy Mohamed
+ * Core concepts: Object-Oriented Programming, File Handling &amp; Transactions
+ */</span>
+
+<span class="code-keyword">#include</span> <span class="code-string">&lt;iostream&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;fstream&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;vector&gt;</span>
+<span class="code-keyword">#include</span> <span class="code-string">&lt;iomanip&gt;</span>
+
+<span class="code-keyword">class</span> <span class="code-type">BankAccount</span> {
+<span class="code-keyword">private</span>:
+    <span class="code-type">int</span> accountNumber;
+    <span class="code-type">std::string</span> ownerName;
+    <span class="code-type">double</span> balance;
+    <span class="code-type">std::vector&lt;std::string&gt;</span> transactionHistory;
+
+<span class="code-keyword">public</span>:
+    <span class="code-func">BankAccount</span>(<span class="code-type">int</span> accNum, <span class="code-type">std::string</span> name, <span class="code-type">double</span> initialDep)
+        : accountNumber(accNum), ownerName(name), balance(initialDep) {
+        logTransaction(<span class="code-string">"Account created with initial deposit: $"</span> + <span class="code-type">std::to_string</span>(initialDep));
+    }
+
+    <span class="code-type">void</span> <span class="code-func">deposit</span>(<span class="code-type">double</span> amount) {
+        <span class="code-keyword">if</span> (amount &gt; 0) {
+            balance += amount;
+            logTransaction(<span class="code-string">"Deposited: $"</span> + <span class="code-type">std::to_string</span>(amount));
+            saveToFile();
+        }
+    }
+
+    <span class="code-type">bool</span> <span class="code-func">withdraw</span>(<span class="code-type">double</span> amount) {
+        <span class="code-keyword">if</span> (amount &gt; 0 &amp;&amp; amount &lt;= balance) {
+            balance -= amount;
+            logTransaction(<span class="code-string">"Withdrawn: $"</span> + <span class="code-type">std::to_string</span>(amount));
+            saveToFile();
+            <span class="code-keyword">return</span> <span class="code-keyword">true</span>;
+        }
+        <span class="code-keyword">return</span> <span class="code-keyword">false</span>;
+    }
+
+    <span class="code-type">void</span> <span class="code-func">saveToFile</span>() {
+        <span class="code-type">std::ofstream</span> outFile(<span class="code-string">"accounts.dat"</span>, <span class="code-type">std::ios::app</span>);
+        <span class="code-keyword">if</span> (outFile.is_open()) {
+            outFile &lt;&lt; accountNumber &lt;&lt; <span class="code-string">"|"</span> &lt;&lt; ownerName &lt;&lt; <span class="code-string">"|"</span> &lt;&lt; balance &lt;&lt; <span class="code-string">"\n"</span>;
+            outFile.close();
+        }
+    }
+};</code></pre>
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <span class="modal-hint">Structured with separation of concerns and robust data persistence.</span>
+        <button class="btn btn-secondary btn-sm" id="closeArchModalBottomBtn">Close Inspector</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-msg" id="toastMessage">Email copied to clipboard!</span>
+  </div>
+
+  <!-- JavaScript Bundle -->
+  <script src="script.js"></script>
+</body>
+</html>
